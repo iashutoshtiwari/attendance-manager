@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherView">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/select_view_date"
+            android:fontFamily="@font/productsans_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Select Date (DD/MM/YYYY)"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/select_view_date_calendar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:foreground="@drawable/ic_date_range_black_24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <Button
+            android:id="@+id/select_ok"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:foreground="@drawable/ic_check_circle_black_24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_show_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
